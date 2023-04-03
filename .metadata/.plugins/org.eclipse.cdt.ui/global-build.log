@@ -1,6 +1,72 @@
-Info: Nothing to build for tarefa 1
-11:54:56 **** Incremental Build of configuration Debug for project tarefa 1 ****
+10:36:37 **** Rebuild of configuration Debug for project tarefa numeros ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tarefa1.o" "..\\src\\tarefa1.cpp" 
-g++ -o "tarefa 1.exe" "src\\tarefa1.o" 
-Info: Nothing to build for tarefa 1
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tarefa3.o" "..\\src\\tarefa3.cpp" 
+..\src\tarefa3.cpp: In function 'int main()':
+..\src\tarefa3.cpp:30:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < my_vector.size(); i++) {
+                     ~~^~~~~~~~~~~~~~~~~~
+g++ -o "tarefa numeros.exe" "src\\tarefa3.o" 
+Info: Nothing to build for tarefa numeros
+10:40:52 **** Incremental Build of configuration Debug for project tarefa numeros ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tarefa3.o" "..\\src\\tarefa3.cpp" 
+..\src\tarefa3.cpp: In function 'int main()':
+..\src\tarefa3.cpp:26:17: error: 'n' was not declared in this scope
+     std::cin >> n;
+                 ^
+..\src\tarefa3.cpp:35:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < my_vector.size(); i++) {
+                     ~~^~~~~~~~~~~~~~~~~~
+..\src\tarefa3.cpp:43:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < my_vector.size(); i++) {
+                     ~~^~~~~~~~~~~~~~~~~~
+10:40:53 **** Incremental Build of configuration Debug for project tarefa numeros ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tarefa3.o" "..\\src\\tarefa3.cpp" 
+..\src\tarefa3.cpp: In function 'int main()':
+..\src\tarefa3.cpp:26:17: error: 'n' was not declared in this scope
+     std::cin >> n;
+                 ^
+..\src\tarefa3.cpp:35:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < my_vector.size(); i++) {
+                     ~~^~~~~~~~~~~~~~~~~~
+..\src\tarefa3.cpp:43:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < my_vector.size(); i++) {
+                     ~~^~~~~~~~~~~~~~~~~~
+10:41:23 **** Incremental Build of configuration Debug for project tarefa numeros ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tarefa3.o" "..\\src\\tarefa3.cpp" 
+..\src\tarefa3.cpp: In function 'int main()':
+..\src\tarefa3.cpp:36:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < my_vector.size(); i++) {
+                     ~~^~~~~~~~~~~~~~~~~~
+..\src\tarefa3.cpp:44:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < my_vector.size(); i++) {
+                     ~~^~~~~~~~~~~~~~~~~~
+g++ -o "tarefa numeros.exe" "src\\tarefa3.o" 
+Info: Nothing to build for tarefa numeros
+10:43:35 **** Incremental Build of configuration Debug for project tarefa numeros ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tarefa3.o" "..\\src\\tarefa3.cpp" 
+..\src\tarefa3.cpp: In function 'int main()':
+..\src\tarefa3.cpp:36:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < my_vector.size(); i++) {
+                     ~~^~~~~~~~~~~~~~~~~~
+..\src\tarefa3.cpp:44:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < my_vector.size(); i++) {
+                     ~~^~~~~~~~~~~~~~~~~~
+g++ -o "tarefa numeros.exe" "src\\tarefa3.o" 
+Info: Nothing to build for tarefa numeros
+Info: Nothing to build for tarefa numeros
+10:45:14 **** Incremental Build of configuration Debug for project tarefa numeros ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tarefa3.o" "..\\src\\tarefa3.cpp" 
+..\src\tarefa3.cpp: In function 'int main()':
+..\src\tarefa3.cpp:36:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < my_vector.size(); i++) {
+                     ~~^~~~~~~~~~~~~~~~~~
+..\src\tarefa3.cpp:45:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < my_vector.size(); i++) {
+                     ~~^~~~~~~~~~~~~~~~~~
+g++ -o "tarefa numeros.exe" "src\\tarefa3.o" 
+Info: Nothing to build for tarefa numeros
