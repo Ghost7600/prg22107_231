@@ -1,8 +1,8 @@
 //============================================================================
 // Name        : econ.cpp
-// Author      : Kenner Marqueti Couto
+// Author      : Kenner
 // Version     :
-// Copyright   : Copy forbidden!
+// Copyright   : NCR
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
