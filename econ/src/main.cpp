@@ -24,5 +24,6 @@ int main()
 	cout<<"Enter object size: ";
     cin>>objsize;
 	Building buildingObj1 (objposx,objposy,objsize,objname);
+    Building building2 (1,2,3,"predio 2");
     return 0;
 }
