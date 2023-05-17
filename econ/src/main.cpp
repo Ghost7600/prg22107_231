@@ -7,8 +7,9 @@
 //============================================================================
 
 #include <iostream>
-#include "buildings.cpp"
 using namespace std;
+#include "buildings.hpp"
+
 
 int main() 
 {
