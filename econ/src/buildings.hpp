@@ -5,7 +5,7 @@ using namespace std;
 
 class IDGenerator {
   private:
-	static int _counter; //estática da classe para garantir id unico para cada obj
+	  static int _counter; //estática da classe para garantir id unico para cada obj
   public:
     static int getnewID();
 };

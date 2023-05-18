@@ -9,21 +9,26 @@
 #include <iostream>
 using namespace std;
 #include "buildings.hpp"
+#include "manager.hpp"
 
 
 int main() 
 {
-	int objsize,objposx,objposy;
- string fname,lname, objname;
-    cout<<"Enter object name: ";
-    cin>>objname;
-    cout<<"Enter object posx: ";
-    cin>>objposx;
-	cout<<"Enter object posy: ";
-    cin>>objposy;
-	cout<<"Enter object size: ";
-    cin>>objsize;
-	Building buildingObj1 (objposx,objposy,objsize,objname);
-    Building building2 (1,2,3,"predio 2");
+// 	int objsize,objposx,objposy;
+//  string fname,lname, objname;
+//     cout<<"Enter object name: ";
+//     cin>>objname;
+//     cout<<"Enter object posx: ";
+//     cin>>objposx;
+// 	cout<<"Enter object posy: ";
+//     cin>>objposy;
+// 	cout<<"Enter object size: ";
+//     cin>>objsize;
+// 	Building buildingObj1 (objposx,objposy,objsize,objname);
+//     Building building2 (1,2,3,"predio 2");
+    Manager runner;
+    while (1){
+        runner.esperaAcao();
+    }
     return 0;
 }
