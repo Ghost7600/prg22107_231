@@ -29,4 +29,6 @@ class Building {
 
   public:
     Building(int x ,int y, int objsize, std::string objnome);
+    int uniqueID() { return _uniqueID; }
+    
 };

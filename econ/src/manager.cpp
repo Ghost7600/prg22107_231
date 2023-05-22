@@ -10,7 +10,7 @@
 
 void Manager::esperaAcao(){
     int escolha;
-    cout<<"\n Escolha a acao: \n 0 - SAIR \n 1 - Criar Building \n";
+    cout<<"\n Escolha a acao: \n 0 - SAIR \n 1 - Criar Building \n 2 - Listar Buildings";
     cin>>escolha;
     switch(escolha){
     case(0):
@@ -30,6 +30,7 @@ void Manager::esperaAcao(){
         this->criabuilding(x,y,tamanho,nome);
     break;
     }
+    case (2):
     default:
     cout<<"\n Escolha não reconhecida \n ";
     break;
@@ -37,11 +38,12 @@ void Manager::esperaAcao(){
 
 };
 
-struct objeto Manager::criabuilding(int x ,int y, int objsize, std::string objnome){
-    objeto obj1;
-    _bdptr = new Building(x,y,objsize,objnome);
-    obj1.nome = objnome;
-    obj1.ponteiro = _bdptr;
-    return obj1;
+void Manager::criabuilding(int x ,int y, int objsize, std::string objnome){
+    Building * tmp = new Building(x,y,objsize,objnome);
+    buildinglist[tmp->uniqueID()] = tmp;
 };
+
+Building* Manager::getBuilding(int id){
+    return buildinglist[id];
+}
 
