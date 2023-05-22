@@ -1,3 +1,7 @@
 ConfigSelector.shell.h=106
 ConfigSelector.shell.w=250
+ModeSelector.shell.h=101
+ModeSelector.shell.w=150
+TargetSelector.shell.h=72
+TargetSelector.shell.w=200
 eclipse.preferences.version=1

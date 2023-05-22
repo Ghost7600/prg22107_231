@@ -14,7 +14,8 @@ class Manager{
     std::map<int, Building*> buildinglist;
     //Building* _bdptr;
     public:
-        void criabuilding(int x = 1 ,int y=1, int objsize=1, std::string objnome);
+        void criabuilding(std::string objnome, int x = 1 ,int y=1, int objsize=1);
         void esperaAcao();
         Building* getBuilding(int id);
+        void listBuildings();
 };

@@ -28,7 +28,7 @@ class Building {
     std::string _nome;
 
   public:
-    Building(int x ,int y, int objsize, std::string objnome);
+    Building(int x,int y, int objsize, std::string objnome);
     int uniqueID() { return _uniqueID; }
-    
+    std::string nome(){return _nome;}
 };
