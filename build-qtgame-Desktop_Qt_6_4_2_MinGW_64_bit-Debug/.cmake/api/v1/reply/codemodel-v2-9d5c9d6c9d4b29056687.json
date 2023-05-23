@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-4b3edcbb844e9a02fefa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "qtgame",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "qtgame::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-qtgame-Debug-3c19166732bf7c0da867.json",
+					"name" : "qtgame",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "qtgame_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-qtgame_autogen-Debug-bbb2233497fb46cf823d.json",
+					"name" : "qtgame_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "qtgame_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-qtgame_autogen_timestamp_deps-Debug-14b6d13a298e84597119.json",
+					"name" : "qtgame_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/IMPORTANTE/Faculdade/OOP/prg22107_231/build-qtgame-Desktop_Qt_6_4_2_MinGW_64_bit-Debug",
+		"source" : "F:/IMPORTANTE/Faculdade/OOP/prg22107_231/qtgame"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -15,19 +15,16 @@ class BuildingID{
 
   public:
 
-    BuildingID(){
-      newID=0;
-    }
+    // int BuildingID::getID(){    //chamando função estática
+    //     return newID++;
+    // }
 
-    int getnewID (void){
-      int uid = BuildingID::newID;
-      uid++;
-      BuildingID::newID = uid;
-      return uid;
+    static int getnewID (void){
+      return newID++;
     }
 };
 
-BuildingID idindex;
+BuildingID::newID = 0;
 
 
 class Building {
@@ -41,7 +38,7 @@ class Building {
 
   public:
     Building(int x ,int y, int objsize, std::string objnome){
-        uniqueID = idindex.getnewID();
+        uniqueID = BuildingID::getnewID();
         size = objsize;
         location[0] = x;
         location[1] = y;
