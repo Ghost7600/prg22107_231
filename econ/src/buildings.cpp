@@ -6,45 +6,30 @@
  */
 
 #include <iostream>
+#include "buildings.hpp"
 
 using namespace std;
 
-class BuildingID{
-	private:
-		static int newID; //estática da classe para garantir id unico para cada obj
+int IDGenerator::getnewID() {
+      return ++_counter;
+}
 
-  public:
-
-    // int BuildingID::getID(){    //chamando função estática
-    //     return newID++;
-    // }
-
-    static int getnewID (void){
-      return newID++;
-    }
-};
-
-BuildingID::newID = 0;
+int IDGenerator::_counter = 0;
 
 
-class Building {
+int BuildingID::getnewID (void){ //funções estáticas chamar com ::
+  return ++_newID;
+}
 
-  private:
-    //static int newID =0; //estática da classe para garantir id unico para cada obj
-    int uniqueID;
-    int size;
-    int location[2];
-    std::string _nome;
+int BuildingID::_newID = 1;
 
-  public:
-    Building(int x ,int y, int objsize, std::string objnome){
-        uniqueID = BuildingID::getnewID();
-        size = objsize;
-        location[0] = x;
-        location[1] = y;
-        _nome = objnome;
-    	cout << "building (" << this << ") constructed!" << endl;
-    	cout << "UID = "<< (this -> uniqueID) << endl;
-    }
-
-};
+Building::Building(int x ,int y, int objsize, std::string objnome)
+{
+  _uniqueID = IDGenerator::getnewID();
+  _size = objsize;
+  _location[0] = x;
+  _location[1] = y;
+  _nome = objnome;
+  cout << "building (" << this << ") constructed!" << endl;
+  cout << "UID = "<< (this -> _uniqueID) << endl;
+}

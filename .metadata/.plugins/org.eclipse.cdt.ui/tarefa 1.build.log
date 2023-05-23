@@ -1,1 +1,7 @@
-Info: Nothing to build for tarefa 1
+01:17:15 **** Rebuild of configuration Debug for project tarefa 1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tarefa1.o" "..\\src\\tarefa1.cpp" 
+g++ -o "tarefa 1.exe" "src\\tarefa1.o" 
+
+01:17:15 Build Finished. 0 errors, 0 warnings. (took 586ms)
+
