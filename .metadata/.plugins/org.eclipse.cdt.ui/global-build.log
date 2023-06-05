@@ -97,3 +97,45 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "qt\\teste1\\main.o" "..\\qt\\teste1\
  #include <QApplication>
                         ^
 compilation terminated.
+15:13:12 **** Build of configuration Debug for project 4_displaymux ****
+make all 
+Building file: ../funsape/util/debug.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -funsigned-char -funsigned-bitfields -fno-exceptions -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"funsape/util/debug.d" -MT"funsape/util/debug.o" -c -o "funsape/util/debug.o" "../funsape/util/debug.cpp"
+make: *** [funsape/util/debug.o] Error -1073741502
+"make all" terminated with exit code 2. Build might be incomplete.
+15:13:23 **** Incremental Build of configuration Debug for project 4_displaymux ****
+make all 
+Building file: ../funsape/util/debug.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -funsigned-char -funsigned-bitfields -fno-exceptions -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"funsape/util/debug.d" -MT"funsape/util/debug.o" -c -o "funsape/util/debug.o" "../funsape/util/debug.cpp"
+make: *** [funsape/util/debug.o] Error -1073741502
+"make all" terminated with exit code 2. Build might be incomplete.
+15:13:27 **** Incremental Build of configuration Debug for project 4_displaymux ****
+make all 
+Building file: ../funsape/util/debug.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -funsigned-char -funsigned-bitfields -fno-exceptions -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"funsape/util/debug.d" -MT"funsape/util/debug.o" -c -o "funsape/util/debug.o" "../funsape/util/debug.cpp"
+make: *** [funsape/util/debug.o] Error -1073741502
+"make all" terminated with exit code 2. Build might be incomplete.
+15:13:32 **** Incremental Build of configuration Debug for project 4_displaymux ****
+make all 
+Building file: ../funsape/util/debug.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -funsigned-char -funsigned-bitfields -fno-exceptions -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"funsape/util/debug.d" -MT"funsape/util/debug.o" -c -o "funsape/util/debug.o" "../funsape/util/debug.cpp"
+make: *** [funsape/util/debug.o] Error -1073741502
+"make all" terminated with exit code 2. Build might be incomplete.
+15:16:08 **** Incremental Build of configuration Debug for project 4_displaymux ****
+make all 
+Building file: ../funsape/util/debug.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -funsigned-char -funsigned-bitfields -fno-exceptions -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"funsape/util/debug.d" -MT"funsape/util/debug.o" -c -o "funsape/util/debug.o" "../funsape/util/debug.cpp"
+make: *** [funsape/util/debug.o] Error -1073741502
+"make all" terminated with exit code 2. Build might be incomplete.
+08:42:43 **** Build of configuration Debug for project 4_displaymux ****
+make all 
+Building file: ../funsape/util/debug.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -funsigned-char -funsigned-bitfields -fno-exceptions -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"funsape/util/debug.d" -MT"funsape/util/debug.o" -c -o "funsape/util/debug.o" "../funsape/util/debug.cpp"
+make: *** [funsape/util/debug.o] Error -1073741502
+"make all" terminated with exit code 2. Build might be incomplete.
