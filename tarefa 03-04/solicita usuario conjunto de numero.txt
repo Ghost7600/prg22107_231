@@ -1,5 +1,0 @@
-solicita usuario conjunto de numeros inteiros
-imprime na ordem digitada
-apresenta menor numero digitado
-apresenta maior numero digitado
-apresenta em ordem crescente

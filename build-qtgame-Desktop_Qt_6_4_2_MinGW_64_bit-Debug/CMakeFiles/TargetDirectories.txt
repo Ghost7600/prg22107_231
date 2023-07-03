@@ -1,9 +1,0 @@
-F:/IMPORTANTE/Faculdade/OOP/prg22107_231/build-qtgame-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/CMakeFiles/qtgame.dir
-F:/IMPORTANTE/Faculdade/OOP/prg22107_231/build-qtgame-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
-F:/IMPORTANTE/Faculdade/OOP/prg22107_231/build-qtgame-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
-F:/IMPORTANTE/Faculdade/OOP/prg22107_231/build-qtgame-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
-F:/IMPORTANTE/Faculdade/OOP/prg22107_231/build-qtgame-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/CMakeFiles/install.dir
-F:/IMPORTANTE/Faculdade/OOP/prg22107_231/build-qtgame-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
-F:/IMPORTANTE/Faculdade/OOP/prg22107_231/build-qtgame-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
-F:/IMPORTANTE/Faculdade/OOP/prg22107_231/build-qtgame-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/CMakeFiles/qtgame_autogen_timestamp_deps.dir
-F:/IMPORTANTE/Faculdade/OOP/prg22107_231/build-qtgame-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/CMakeFiles/qtgame_autogen.dir
