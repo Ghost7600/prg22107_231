@@ -6,6 +6,7 @@ Company::Company(std::string name, int cash)
 {
      _name = name;
      _cash = cash;
+     _buildingsCreated = 0;
      cout << "Company (" << this << ") constructed!" << endl;
      cout << "Cash = "<< (this -> _cash) << endl;
 }
@@ -15,14 +16,15 @@ Building* Company::criabuilding(int tipo, std::string objnome)
 {
     Building * tmp = new Building(tipo,objnome);
     cout << "Building created. Building ID:" << tmp->uniqueID();
-    buildingslist[tmp->uniqueID()] = tmp;
+    buildingslist[_buildingsCreated] = tmp;
+    _buildingsCreated++;
 //     ownedBuildings.push_back(tmp);
     return tmp;
 };
 
 void Company::listBuildings(){
-    int i=1;
-    while (i <= buildingslist.size()){
+    int i=0;
+    while (i < buildingslist.size()){
         Building* cbuilding = buildingslist[i];
         cout<<cbuilding->uniqueID()<<" ";
         cout<<cbuilding->nome()<<"\n"; 

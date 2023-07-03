@@ -13,7 +13,7 @@ class Company{
         int _cash;
         std::vector<Building*> ownedBuildings;
         std::map<int, Building*> buildingslist;
-
+        uint16_t _buildingsCreated;
     public:
         Company(std::string name, int cash = 0);
         std::string getName (void);
