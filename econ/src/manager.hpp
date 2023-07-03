@@ -1,7 +1,9 @@
 #pragma once
 #include <iostream>
-#include "buildings.hpp"
+#include <vector>
 #include <map>
+#include "buildings.hpp"
+#include "company.hpp"
 
     /*struct objeto{
         Building* ponteiro;
@@ -11,11 +13,16 @@
 class Manager{
 
     private:
+    std::vector<Company*> companylist;
+    int _chosencompany;
+    // int _escolha;
+
     std::map<int, Building*> buildinglist;
     //Building* _bdptr;
     public:
-        void criabuilding(std::string objnome, int x = 1 ,int y=1, int objsize=1);
+        void criabuilding( int _type, std::string objnome);
         void esperaAcao();
         Building* getBuilding(int id);
         void listBuildings();
+        void passarturno();
 };

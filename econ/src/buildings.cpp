@@ -23,13 +23,15 @@ int BuildingID::getnewID (void){ //funções estáticas chamar com ::
 
 int BuildingID::_newID = 1;
 
-Building::Building(int x ,int y, int objsize, std::string objnome)
+Building::Building(int type, std::string objnome)
 {
   _uniqueID = IDGenerator::getnewID();
-  _size = objsize;
-  _location[0] = x;
-  _location[1] = y;
+  _type = type;
   _nome = objnome;
   cout << "building (" << this << ") constructed!" << endl;
   cout << "UID = "<< (this -> _uniqueID) << endl;
+}
+
+void Building::produce(){
+
 }

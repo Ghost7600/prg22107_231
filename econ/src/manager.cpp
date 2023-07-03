@@ -1,49 +1,51 @@
-/*
- * manager.cpp
- *
- *  Created on: 17 de mai. de 2023
- *      Author: Kenner
- */
-
 #include <iostream>
 #include "manager.hpp"
-
 void Manager::esperaAcao(){
     int escolha;
-    cout<<"\n Escolha a acao: \n 0 - SAIR \n 1 - Criar Building \n 2 - Listar Buildings";
+    cout<<"\n Chose action: \n 0 - EXIT \n 1 - Create Building \n 2 - List Buildings \n 8 - Create Company \n 9 - Select Company \n ";
     cin>>escolha;
     switch(escolha){
     case(0):
+        cout<<"Saindo!";
+        exit;
         break;
     case(1):
     {
-        int x,y,tamanho;
+        int tipo;
         std::string nome;
         cout<<"Enter object name: ";
         cin>>nome;
-        cout<<"Enter object posx: ";
-        cin>>x;
-	    cout<<"Enter object posy: ";
-        cin>>y;
-	    cout<<"Enter object size: ";
-        cin>>tamanho;
-        this->criabuilding(nome,x,y,tamanho);
-    break;
+        cout<<"Enter 1 for producer, 2 for consumer or 3 for both:";
+        cin>>tipo;
+        this->criabuilding(tipo,nome);
+        break;
     }
     case (2):
     {
         listBuildings();
+        break;
+    }
+
+    case (8):
+    {
+        //criarcompany();   
+        break;
+    }
+
+    case (9):
+    {
+
     }
     default:
-    cout<<"\n Escolha não reconhecida \n ";
-    break;
+        cout<<"\n Escolha não reconhecida \n ";
+        break;
     }
 
 };
 
-void Manager::criabuilding(std::string objnome, int x = 1 ,int y=1, int objsize=1)
+void Manager::criabuilding(int tipo, std::string objnome)
 {
-    Building * tmp = new Building(x,y,objsize,objnome);
+    Building * tmp = new Building(tipo,objnome);
     buildinglist[tmp->uniqueID()] = tmp;
 };
 
@@ -52,13 +54,18 @@ Building* Manager::getBuilding(int id){
 }
 
 void Manager::listBuildings(){
-    cout<<buildinglist[1]->uniqueID();
-    cout<<buildinglist[1]->nome();
-    cout<<buildinglist[2]->uniqueID();
-    cout<<buildinglist[2]->nome();
-    cout<<buildinglist[3]->uniqueID();
-    cout<<buildinglist[3]->nome();    
-}
+    int i=1;
+    while (i < buildinglist.size()){
+        cout<<buildinglist[i]->uniqueID()<<" ";
+        cout<<buildinglist[i]->nome()<<"\n"; 
+        i++;
+    }
+     
+};
+
+void Manager::passarturno(){
+};
+
 
 
 

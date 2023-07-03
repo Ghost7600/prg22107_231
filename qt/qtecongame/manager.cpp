@@ -1,13 +1,5 @@
-/*
- * manager.cpp
- *
- *  Created on: 17 de mai. de 2023
- *      Author: Kenner
- */
-
 #include <iostream>
 #include "manager.hpp"
-
 void Manager::esperaAcao(){
     int escolha;
     cout<<"\n Escolha a acao: \n 0 - SAIR \n 1 - Criar Building \n 2 - Listar Buildings";

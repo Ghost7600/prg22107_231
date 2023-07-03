@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QWidget(parent)
@@ -10,10 +9,10 @@ MainWindow::MainWindow(QWidget *parent)
     _label = new QLabel("Label teste");
     _label = new QLabel("<h2><i>Hello</i> <font color=red>QT!</font></h2>");
     _lineEdit = new QLineEdit(this);
-    _caseCheckBox = new QCheckBox("Checkbox", this);
-    _findButton = new QPushButton("Find", this);
+    _caseCheckBox = new QCheckBox("I like This", this);
+    _playButton = new QPushButton("Jogar", this);
     _closeButton = new QPushButton("Teste close button", this);
-    ui = new Ui::MainWindow;  // Assuming Ui::MainWindow is a separate class or generated code
+
 
     //Creating Layout
     _vlayout = new QVBoxLayout(this);
@@ -25,12 +24,18 @@ MainWindow::MainWindow(QWidget *parent)
     _vlayout->addLayout(sublayout);
     _hlayout->addWidget(_lineEdit);
     _hlayout->addWidget(_caseCheckBox);
-    _hlayout->addWidget(_findButton);
+    _hlayout->addWidget(_playButton);
     _vlayout->addLayout(_hlayout);
 
-
+    connect(_closeButton, SIGNAL(clicked()),this,SLOT(close()));
+    connect(_playButton, SIGNAL(clicked()),this,SLOT(playSlot()));
     this->setLayout(_vlayout);
     this->show();
+
+}
+
+void MainWindow::playSlot(){
+
 }
 
 MainWindow::~MainWindow()
