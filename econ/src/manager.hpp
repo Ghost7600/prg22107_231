@@ -24,8 +24,10 @@ class Manager{
     void criabuilding( int _type, std::string objnome);
 
     public:
+    Manager(void);
     void esperaAcao();
     Company* getcompany(int id);
     void listCompanies();
     void passarturno();
+
 };

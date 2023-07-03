@@ -11,12 +11,6 @@ class IDGenerator {
 };
 
 
-class BuildingID{
-	private:
-		static int _newID; //estática da classe para garantir id unico para cada obj 
-  public:
-    static int getnewID (void);
-};
 
 class Building {
 

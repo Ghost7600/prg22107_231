@@ -1,5 +1,11 @@
 #include <iostream>
 #include "manager.hpp"
+
+Manager::Manager(void)
+{
+     selectedCompany=0;
+}
+
 void Manager::esperaAcao(){
     int escolha;
     cout<<"\n Chose action: \n 0 - EXIT     - NOT WORKING RN - PRESS CTRL+C INSTEAD!!! \n 1 - Create Building \n 2 - List Buildings \n 7 - List companies  \n 8 - Create Company \n 9 - Select Company \n ";
@@ -56,10 +62,16 @@ void Manager::esperaAcao(){
 
 };
 
+
 void Manager::criabuilding(int tipo, std::string objnome)
 {
+    if (selectedCompany == nullptr){
+        cout << "Building not created, please Choose a Valid Company.";
+    }
+    else {
     Building* tmp = selectedCompany->criabuilding(tipo, objnome);
     allbuildingslist[tmp->uniqueID()] = tmp;
+    }
 };
 
 Company* Manager::getcompany(int id){

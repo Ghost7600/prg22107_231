@@ -17,12 +17,6 @@ int IDGenerator::getnewID() {
 int IDGenerator::_counter = 0;
 
 
-int BuildingID::getnewID (void){ //funções estáticas chamar com ::
-  return ++_newID;
-}
-
-int BuildingID::_newID = 0;
-
 Building::Building(int type, std::string objnome)
 {
   _uniqueID = IDGenerator::getnewID();
