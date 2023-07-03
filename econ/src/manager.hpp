@@ -13,16 +13,19 @@
 class Manager{
 
     private:
-    std::vector<Company*> companylist;
+    std::vector<Company*> companieslist;
     int _chosencompany;
+    Company* selectedCompany;
     // int _escolha;
-
-    std::map<int, Building*> buildinglist;
+    std::map<int, Building*> allbuildingslist;
     //Building* _bdptr;
+    size_t criarCompany(std::string nome);
+    void selectCompany(int index);
+    void criabuilding( int _type, std::string objnome);
+
     public:
-        void criabuilding( int _type, std::string objnome);
-        void esperaAcao();
-        Building* getBuilding(int id);
-        void listBuildings();
-        void passarturno();
+    void esperaAcao();
+    Company* getcompany(int id);
+    void listCompanies();
+    void passarturno();
 };
